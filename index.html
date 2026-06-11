@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dear Jean</title>
+  </head>
+
+  <body>
+
+    <!-- DEV ONLY — delete before release -->
+<div style="position:fixed; bottom:1rem; left:1rem; z-index:999; display:flex; gap:0.5rem; align-items:center; opacity:0.4;">
+  <input type="number" id="dev-jump" min="1" max="17" placeholder="pg" style="width:3.5rem; font-family:monospace; font-size:0.75rem; padding:0.2rem 0.3rem; border:1px solid #999;">
+  <button onclick="goToPage(parseInt(document.getElementById('dev-jump').value))" style="font-family:monospace; font-size:0.75rem; padding:0.2rem 0.4rem;">go</button>
+</div>
+<!-- END DEV -->
+
+    <div id="page1" class="page active">
+
+      <div class="line">
+        <span>Dear</span>
+        <input
+          type="text"
+          name="Jean"
+          placeholder="you"
+          style="width:4rem">
+        <span>,</span>
+      </div>
+
+      <div class="line">
+        <span>I first met her on</span>
+        <input type="date" style="width:7rem">
+        .
+        <span><br>It was during my engineering lecture, when she tapped my shoulder from behind and slid into the seat beside me. She was troubled, that I
+        <input
+          type="password"
+          value="I-can-not-recall-in-detail-how-I-helped-her"
+          placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
+          disabled
+          style="width:7rem"> , when she had trouble paying for her coffee prior to the lecture.</span>
+      </div>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page2" class="page">
+
+      <p>I learned that she enjoyed books, but would never dream of putting a word onto paper.</p>
+      <br>
+      <p>Realities like that were for ambitious people, and she did not have an ounce of ambition in her.</p>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page3" class="page">
+
+      <p>There really was no reason for us to see each other. Yet, I always found reasons to be near her.</p>
+      <p>Movies were her favourite way to pass time. I wanted to know what movies she liked, so I pretended that I didn't care what we watched.</p>
+
+      <div class="line">
+        <span>Once, I bought</span>
+        <div style="margin: 0.4rem 0 0.4rem 0.5rem; display:flex; flex-direction:column; gap:0.3rem;">
+          <label>
+            <input type="checkbox" checked class="no-toggle"> a bucket of salty popcorn
+          </label>
+          <label>
+            <input type="checkbox" checked class="no-toggle"> a large drink each
+          </label>
+        </div>
+        <span>and learned that she never indulges like this, because she felt that too much of one thing just overwhelmed her.</span>
+      </div>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+  <div id="page4" class="page">
+    <div class="line no-wrap" >
+      <span>We walked a lot together.</span>
+      <span style="margin-left: 32rem;"> It was during one of those nights I spotted</span>
+      <input
+      type="password"
+      value="the mole behind her ear"
+      disabled
+      style="width:11rem">. She would whisper into my ear because she didn't like to raise her voice.
+      <div class="next-btn" >
+        <button class="next-btn-el" style="margin-left: 2rem">→</button>
+      </div>        
+    </div>
+
+    
+</div>
+
+    <div id="page5" class="page">
+
+      <p>She tells me not to worry, because she'll be by my side forever. She does not want to feel like she has lost a part of herself to someone else.</p>
+
+      <div class="line">
+        <span>I probably would stay single.</span>
+        <button disabled>I</button><button disabled>don't</button><button disabled>know</button><button disabled>how</button><button disabled>to</button><button disabled>love</button><button disabled>someone</button>, is what I tell her.
+      </div>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page6" class="page">
+      <p>I tried to stop myself from seeing her, but I always found a reason to find her.</p>
+      <div style="margin-left:1 rem 0;">
+            <details><summary></summary><p>I bumped into her shoulders more often than necessary.</p>
+              <details><summary></summary><p>I’d hook my fingers through her belt loops.</p>
+                <details><summary></summary><p>I brought her to movies so that I could catch frequent glimpses while she had her attention held under the lights of moving pictures.</p>
+                  <details><summary></summary><p>I would dust off any fallen eyelash that settled on her cheek.</p>
+                    <details><summary></summary>
+                      <div style="display:flex; align-items:center; gap:16px; width:100%;">
+                        <span>I wished she would just take my love</span>
+                        <input type="range" min="0" max="100" value="50">
+                        <span>I knew I would push her to a point of no return</span>
+                      </div>
+            </details>
+          </div>
+
+     <!--  <div style="display:flex; flex-direction:column; gap:0.4rem; margin: 2rem 0;">
+        <button class="reaching">I bumped into her shoulders more often than necessary.</button>
+        <button class="reaching">I'd hook my fingers through her belt loops.</button>
+        <button class="reaching">I brought her to movies so that I could catch frequent glimpses while she had her attention held under the lights of moving pictures.</button>
+        <button class="reaching">I would dust off any fallen eyelash that settled on her cheek.</button>
+      </div>  -->
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page7" class="page">
+
+      <p>I had known her long enough to see through her guises.</p>
+
+      <details style="margin-left:1rem;">
+        <summary></summary>
+        <p>During another engineering class she took with me, she always wedged her bag between us, although she always put it away to lean in and peek at my notes.</p>
+
+        <details>
+          <summary></summary>
+          <p>At the movies, she now asked for two straws for our shared drink and positioned them at staggering heights, and yet, would very clumsily drink from mine.</p>
+          <details>
+            <summary></summary>
+            <p>She would always pace herself half a step behind me whenever we walked, and because I often failed to catch her words, she inevitably walked at my pace.</p>
+            <details>
+              <summary></summary>
+              <p>Sometimes, when we are together, I will watch her hair fall down the top of her face.</p>
+              <div class="range-wrap">
+                <span class="range-label">I think of</span>
+                <input type="range" min="0" max="100" value="50" id="range-hair">
+                <span class="range-label">I stop myself from</span>
+              </div>
+              <p>running my fingers through her hair.</p>
+            </details>
+          </details>
+        </details>
+      </details>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page8" class="page">
+
+      <p>On the night of graduation, we drank wine by the small canal. A cat came and pressed itself right by her foot.</p>
+      <p>Whenever we crossed paths with the campus cats she would stop and spend at least five minutes admiring them.</p>
+      <p>She knelt to its side and stroked its head.</p>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page9" class="page">
+
+      <p>Why don't you like cats?, she asked.<br>She turns to face me.</p>
+
+      <div class="line">
+        <select name="I-think-of-what-to-say">
+          <option disabled selected value="My-mind-fails-me"></option>
+          <option value="not-sure">I am not sure</option>
+          <option value="dont-know" disabled >I don't think I know how to love</option>
+        </select>
+        <span>, I tell her.</span>
+      </div>
+      <p>That's a problem. How will you and I get along in the future?</p>
+      <div class="line">
+        <select name="response-2">
+          <option value="learn" disabled selected>I'll learn</option>
+        </select>, I say.
+      </div>
+
+      <p>Don't be silly. You either do or don't.</p>
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+
+    <div id="page10" class="page">
+
+      <p>I became a research engineer at a small Japanese firm.</p>
+      <p>Outside of work,</p>
+
+      <div style="display:flex; flex-direction:column; gap:0.3rem; margin: 0.25rem 0 0.25rem 0.5rem;">
+        <label><input type="checkbox"> I lingered on her contact in my phonebook.</label>
+        <label><input type="checkbox"> I began cooking, although my expertise is limited to simple one pot meals.</label>
+        <label><input type="checkbox"> I'd be at the theatre stuffing myself with sweet popcorn, sipping on a large fizzy soda till my insides were pruned.</label>
+        <label><input type="checkbox"> I would walk the same paths that <a href="paths.html"  onclick="event.preventDefault(); window.open(this.href,'popup','width=300,height=200')">I used to walk with her.</a></label>
+      </div>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page11" class="page">
+      <div class="line">
+        <span>I saw her.</span>
+
+        <button class="reaching">I</button><button class="reaching">called</button><button class="reaching">out</button><button class="reaching">to</button><button class="reaching">her</button><button class="reaching">across</button><button class="reaching">the</button><button class="reaching">room</button>
+      </div>
+
+      <div class="line">
+        <select name="reunion-eyes">
+          <option value="I-have-finally-found-her ">Our eyes met.</option>
+          <option value="Maybe-things-would-never-change" disabled >I was sure she would have turned away.</option>
+        </select>
+      </div>
+
+      <div class="line">
+        <span>I went ahead and acted without a single thought.</span>
+      </div>
+
+      <details>
+        <summary></summary>
+        <button class="reaching">I</button><button class="reaching">had</button><button class="reaching">numbed</button><button class="reaching">myself</button><button class="reaching">to</button><button class="reaching">her</button><button class="reaching">absence.</button>
+
+        <details>
+          <summary></summary>
+          <span>I wonder where she had been all this time.</span>
+          <button disabled>All</button><button disabled>my</button><button disabled>memories</button><button disabled>of</button><button disabled>her</button><button disabled>return</button><button disabled>to</button><button disabled>me.</button><button disabled>I</button><button disabled>couldn't</button><button disabled>recall</button><button disabled>where</button><button disabled>we</button><button disabled>were,</button><button disabled>but</button><button disabled>I'd</button><button disabled>take</button><button disabled>her</button><button disabled>and</button><button disabled>escape</button><button disabled>to</button><button disabled>some</button><button disabled>far</button><button disabled>away</button><button disabled>place</button><button disabled>that</button><button disabled>she</button><button disabled>would</button><button disabled>not</button><button disabled>recognise</button><button disabled>so</button><button disabled>she'll</button><button disabled>never</button><button disabled>leave</button><button disabled>me.</button>
+        </details>
+      </details>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+
+    <div id="page12" class="page">
+
+      <p>I'm busy being an adult, I tell her.</p>
+      <p>So am I, she tells me.</p>
+
+      <div class="line">
+        <span>And I laugh. For the first time in forever, I can feel myself </span>
+        <button class="silent">smile</button>
+        <span>because</span>
+        <button class="silent">I</button><button class="silent">am</button><button class="silent">at</button><button class="silent">a</button><button class="silent">loss</button><button class="silent">for</button><button class="silent">words.</button>
+      </div>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page13" class="page">
+
+      <p>She led me to her apartment, which we walked the entire course.</p>
+      <p>She told me about her job, her new hobby of skimming the phonebook, and lots of other things.</p>
+
+      <div class="line">
+        <span>She asked me about what I do, and I told her about</span>
+        <select name="things-i-did-without-her">
+          <option value="I-wont-let-her-know-how-sad-i-am" selected>all the boring things in my life.</option>
+          <option value="I-have-always-been-thinking-of-her" disabled>the nights I walked the same paths.</option>
+        </select>
+      </div>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page14" class="page">
+
+      <p>She put on a movie. It was her favourite black and white film.</p>
+
+      <button disabled>My</button><button disabled>eyes</button><button disabled>fell</button><button disabled>onto</button><button disabled>her</button><button disabled>features</button><button disabled>caught</button><button disabled>under</button><button disabled>the</button><button disabled>moving</button><button disabled>lights</button>
+
+      <p>It must have been an emotional movie, because I watched a glimmer of a tear cascade down her cheek.</p>
+
+      <input
+        type="text"
+        disabled
+        value="I reach out my hand to wipe off that tear."
+        style="width:100%;">
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page15" class="page">
+
+      <p>We have not spoken to each other for days. Moments like this are getting more common between us.</p>
+      <p>We were having the time of our lives, playing house along the aisles of the electronics, making imaginary cakes and bread, when I remembered we needed a new toaster.</p>
+
+      <input type="text" disabled value="" style="width:60%; height:30rem; align-self:center;">
+
+      <p>We did not get the toaster in the end. I asked if she was alright with walking away without one.</p>
+      <p>Toast was her favourite breakfast.</p>
+
+      <button disabled>I don't know why things like this keep happening. I should have known not to make this mistake.</button>
+      <button disabled>I</button><button disabled>don't</button><button disabled>know</button><button disabled>why</button><button disabled>things</button><button disabled>like</button><button disabled>this</button><button disabled>keep</button><button disabled>happening.</button>
+      <button disabled>I</button><button disabled>should</button><button disabled>have</button><button disabled>known</button><button disabled>not</button><button disabled>to</button><button disabled>make</button><button disabled>this</button><button disabled>mistake.</button>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+    <div id="page16" class="page">
+
+      <p>That happened on Sunday.</p>
+      <p>She always left for work before I woke up, so I never got to catch her in the mornings.</p>
+      <p>Monday, she came back past midnight after a client dinner.</p>
+
+      <div class="line">
+        <span>Tuesday,</span>
+        <input
+          type="text"
+          placeholder="during my lunch break, I took a cab to the nearest store and bought a toaster."
+          style="width:75%;">
+      </div>
+
+      <p>Unfortunately, as I was about to leave, I had been shoved with a pile of work that needed immediate attention.</p>
+
+      <button class="silent">I</button><button class="silent">came</button><button class="silent">home</button><button class="silent">to</button><button class="silent">her</button><button class="silent">in</button><button class="silent">bed.</button>
+
+      <p>Every morning, I woke up to a room temperature latte waiting for me.</p>
+      <!-- put this on a new page? --> 
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+
+    
+    <div id="page17" class="page">
+
+      <p>As I walked back home from the bus stop, I saw her at the playground right by our apartment.</p>
+      <p>She was crouched up at the foot of the slide. </p>
+
+      <div class="line" style="align-items:center;">
+      <span>I</span>
+      <span class="range-label">walked slowly</span>
+      <input type="range" min="0" max="100" value="50" id="range-approach" style="width:10rem;">
+      <span class="range-label">ran</span>
+      <span>to her.</span>
+    </div>
+      
+      <p>I placed my hand over the crown of her head. She looked up, her dark eyes glistening through the tears.</p>
+
+      <input type="text" value="" placeholder="" style="width:100%; height:36rem;" id="playground-field">
+      
+
+      <span><p>She let out a small hiccup, and we both laughed. She took my hand from her head, held it in her clasped hands. Her fingers were icy at their tips.</p>
+            <details><summary></summary><p>She told me she isn't sure why this happened</p>
+            <details><summary></summary><p>I 
+              <input type="text" value="" style="width:60%; height:1rem;">
+            </p>
+          </span>
+
+      <p>We stay like this for a long time.</p>
+
+      <div class="next-btn">
+        <button class="next-btn-el">→</button>
+      </div>
+    </div>
+
+
+    <script>
+      // ─── Navigation ──────────────────────────────────────────────
+      let currentPage = 1;
+      const totalPages = 17;
+
+      function goToPage(n) {
+        document.getElementById("page" + currentPage).classList.remove("active");
+        currentPage = n > totalPages ? 1 : n;
+        document.getElementById("page" + currentPage).classList.add("active");
+        window.scrollTo(0, 0);
+      }
+
+      document.querySelectorAll(".next-btn-el").forEach(btn => {
+        btn.addEventListener("click", () => goToPage(currentPage + 1));
+      });
+
+
+      // ─── Greys on press ──────────────────────────────────────────
+      // Council: irreversibility — one press, window closes,
+      // button permanently greyed. Pointer events removed after press.
+      document.querySelectorAll(".reaching").forEach(btn => {
+        btn.addEventListener("click", function handler() {
+          this.classList.add("spent");
+          this.removeEventListener("click", handler);
+        });
+      });
+
+
+      // ─── Silent buttons ──────────────────────────────────────────
+      // Council: action without arrival — pressable indefinitely,
+      // nothing accumulates, system does not respond.
+      // No additional JS needed — they have no handler.
+
+
+      // ─── Pre-checked non-toggleable checkboxes ───────────────────
+      // Council: past decisions irrecoverable.
+      document.querySelectorAll(".no-toggle").forEach(cb => {
+        cb.addEventListener("click", e => e.preventDefault());
+        cb.addEventListener("change", e => e.preventDefault());
+      });
+
+
+      // ─── Range sliders reset to centre on reload ─────────────────
+      // Council: continuous irresolution — same unresolved position
+      // every session. Applies to all three range elements.
+      ["range-love", "range-hair", "range-approach"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.value = 50;
+      });
+
+      // ─── Select: disabled selected option correction ──────────────
+      // Native HTML won't let a disabled option be the selected value
+      // on form submission, but for display purposes (reader sees the
+      // foreclosed option as the visible default) this is correct.
+      // No JS needed — handled by HTML attributes above.
+
+
+      // ─── Playground empty text field ─────────────────────────────
+      // Council decision: enabled (projection without reception).
+      // Field accepts input, system does not process it.
+      // The field simply exists — no handler needed.
+
+    </script>
+  </body>
+</html>
