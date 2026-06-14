@@ -8,6 +8,21 @@
   </head>
 
   <body>
+    
+    <div class="trigger-box" onclick="openPopup()">
+    <button>?</button>
+</div>
+
+<div id="overlay" class="overlay" onclick="closePopup()">
+    <div class="popup" onclick="event.stopPropagation()">
+        <div class="close" onclick="closePopup()">×</div>
+
+        <p>This is an interactive fiction that interrogates the unstable territory of implied connection between individuals, moving through states of yearning, avoidance, tenderness, and aversion that emerge in relationships that are felt but not fully secured. Framed as a browser-based letter, the work uses familiar interface elements as structural expressions of refusal and delay. It treats digital systems (typically built around connection and routing) as sites where connection breaks down, drifts, or becomes uncertain, positioning the browser as a contemporary emotional landscape where intimacy is continuously negotiated through partial interaction. Across these constraints, the work follows small, ordinary gestures—minor encounters, unspoken observations, deferred communication. Language is shaped and altered as it passes through infrastructural systems that compress and redirect meaning.</p> 
+
+        <p>The work considers what persists in the gap between feeling, expression, and the conditions that determine what can actually be conveyed.</p>
+
+    </div>
+</div>
 
     <div id="page1" class="page active">
 
@@ -435,7 +450,7 @@
 
 
     <script>
-      // ─── Navigation ──────────────────────────────────────────────
+     
       let currentPage = 1;
       const totalPages = 19;
 
@@ -450,10 +465,6 @@
         btn.addEventListener("click", () => goToPage(currentPage + 1));
       });
 
-
-      // ─── Greys on press ──────────────────────────────────────────
-      // Council: irreversibility — one press, window closes,
-      // button permanently greyed. Pointer events removed after press.
       document.querySelectorAll(".reaching").forEach(btn => {
         btn.addEventListener("click", function handler() {
           this.classList.add("spent");
@@ -508,21 +519,12 @@
       });
     }
   });
-
-
-      // ─── Silent buttons ──────────────────────────────────────────
-      
-
-      // ─── Pre-checked non-toggleable checkboxes ───────────────────
       
       document.querySelectorAll(".no-toggle").forEach(cb => {
         cb.addEventListener("click", e => e.preventDefault());
         cb.addEventListener("change", e => e.preventDefault());
       });
-
-
-      // ─── Range sliders reset to centre on reload ─────────────────
-     
+      
       ["range-love", "range-hair", "range-approach"].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.value = 50;
@@ -532,17 +534,13 @@
       document.getElementById('turned-away-option').style.opacity = '0.6';
       });
 
-      // ─── Select: disabled selected option correction ──────────────
-      // Native HTML won't let a disabled option be the selected value
-      // on form submission, but for display purposes (reader sees the
-      // foreclosed option as the visible default) this is correct.
-      // No JS needed — handled by HTML attributes above.
+      function openPopup() {
+        document.getElementById("overlay").style.display = "block";
+    }
 
-
-      // ─── Playground empty text field ─────────────────────────────
-      // Council decision: enabled (projection without reception).
-      // Field accepts input, system does not process it.
-      // The field simply exists — no handler needed.
+    function closePopup() {
+        document.getElementById("overlay").style.display = "none";
+    }
 
     </script>
   </body>
