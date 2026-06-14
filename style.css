@@ -1,0 +1,249 @@
+body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1;
+        color: #111;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        padding: 5rem 1.5rem;
+      }
+
+      .page {
+        display: none;
+        flex-direction: column;
+        gap: 1.25rem;
+        max-width: 40rem;
+        width: 90%;
+      }
+
+      .page.active {
+        display: flex;
+      }
+
+      .next-btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        border:none;
+      }
+      
+      button,
+      input[type="button"] {
+        
+        border: 1px solid #ccc;
+        color: #111;
+        padding: 0.25rem 0.6rem;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        transition: none;
+      }
+
+      .next-btn-el {
+        border: none;
+        background-color: transparent;
+        
+        padding: 0.25rem 0.5rem;
+        font-size: 1.4rem;
+    }
+
+      button:disabled,
+      input[type="button"]:disabled {
+        color: #999;
+        border-color: #ccc;
+        background: transparent;
+        opacity: 0.5;
+      }
+
+      button.wow{
+        width: 20%;
+      }
+
+      button.wow:active{
+        background-color: #d7d7d7; 
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
+        cursor: default;           
+        
+      }
+      
+      .I-cannot-believe-she-is-before-me{
+        display: flex;
+        flex-direction: column; /* Makes them stack one per line */
+        align-items: center;    /* Centers them horizontally */
+        gap: 4rem;
+      }
+
+      button.spent {
+        color: #999;
+        border-color: #ccc;
+        opacity: 0.5;
+        cursor: default;
+        pointer-events: none;
+      }
+
+      .silent:active{
+        background-color: #d7d7d7; 
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
+        cursor: default;           
+        
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="date"],
+      textarea {
+        font-family: inherit;
+        font-size: inherit;
+        border: 1px solid #ccc;
+        background: transparent;
+        color: #111;
+        padding: 0.1rem 0.3rem;
+        border-radius: 0.25rem;
+      }
+
+      input[type="text"]:disabled,
+      input[type="password"]:disabled,
+      input[type="date"]:disabled,
+      textarea:disabled {
+        opacity: 0.5;
+      }
+
+      select {
+        font-family: inherit;
+        font-size: inherit;
+        border: 1px solid #ccc;
+        background: transparent;
+        color: #111;
+        padding: 0.1rem 0.2rem;
+        border-radius: 0;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 0.4rem;
+        cursor: pointer;
+      }
+
+      input[type="range"] {
+        width: 100%;
+        cursor: pointer;
+      }
+
+      details {
+        margin-top: 0rem;
+        margin-left: 2rem;
+      }
+
+      details + details {
+        margin-top: 0.25rem;
+      }
+
+      details details {
+        margin-left: 1rem;
+      }
+
+      details details details {
+        margin-left: 2rem;
+      }
+
+      summary {
+        cursor: pointer;
+        list-style: disclosure-closed;
+        color: #000000;
+        font-size: 1rem;
+      }
+
+      summary::-webkit-details-marker {
+        color: #000000;
+      }
+
+      details[open] > summary {
+        list-style: disclosure-open;
+      }
+
+      details p {
+        margin-top: 0.5rem;
+      }
+
+      .range-wrap {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+
+      .range-label {
+        font-size: 1rem;
+        color: #555;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      a.broken {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: #999;
+      }
+
+      .line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.3rem;
+        line-height: 1.9;
+      }
+
+      label {
+        display: flex;
+        align-items: baseline;
+        gap: 0.4rem;
+        margin: 0.1rem 0;
+      }
+
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        }
+
+        .second {
+        opacity: 0;
+        transition: opacity 0.05s ease;
+        }
+
+        .line:has(#eyes-met:checked) .second {
+        opacity: 0.6;
+        }
+
+        .interactive-phrase {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px; /* Adds neat, consistent spacing */
+            vertical-align: middle;
+        }
+
+        .inline-slider {
+            width: 60px;
+            height: 4px;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+
+        #page4 .no-wrap {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        }
+/* 
+        .vertical-slider {
+            -webkit-appearance: slider-vertical;
+            appearance: slider-vertical;
+            margin: 0;
+        } */
+
