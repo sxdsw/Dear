@@ -536,10 +536,12 @@
 
       function openPopup() {
         document.getElementById("overlay").style.display = "block";
+        document.querySelector(".page.active").style.visibility = "hidden";
     }
 
     function closePopup() {
         document.getElementById("overlay").style.display = "none";
+      document.querySelector(".page.active").style.visibility = "visible";
     }
 
     </script>
