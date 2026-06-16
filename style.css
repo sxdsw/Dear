@@ -264,6 +264,7 @@ body {
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.08);
+    z-index: 1;
 }
 
 /* popup window */
@@ -278,6 +279,7 @@ body {
     padding: clamp(1.25rem, 3vw, 1.75rem);
     line-height: 1.5;
     box-sizing: border-box;
+        z-index: 2;
 }
 
 .close {
@@ -286,6 +288,7 @@ body {
     right: clamp(0.5rem, 1vw, 0.625rem);
     cursor: pointer;
     font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
+        z-index: 3;
 }
 
 .line {
