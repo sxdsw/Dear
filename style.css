@@ -247,44 +247,90 @@ body {
             margin: 0;
         } */
 
-        .trigger-box {
+            /* Trigger Box */
+    .trigger-box {
         position: fixed;
-        bottom: 1.3rem;
-        left: 1.3rem;
+        /* Respect mobile home indicators/notches */
+        bottom: calc(1.5rem + env(safe-area-inset-bottom)); 
+        left: 1.5rem;
         
-        padding: 0.625rem 0.875rem;
+        padding: 0.75rem 1rem;
+        min-height: 44px; /* Minimum recommended iOS/Android touch target */
+        display: flex;
+        align-items: center;
+        
         cursor: pointer;
-        font-size: 12px;
+        font-size: 14px; /* Slightly larger for mobile readability */
         background: #fff;
+        border-radius: 8px; /* Native rounded look */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        
+        /* Remove default mobile tap highlight flash */
+        -webkit-tap-highlight-color: transparent;
+        transition: transform 0.1s ease, background 0.2s ease;
     }
 
-    /* popup overlay */
+    .trigger-box:active {
+        transform: scale(0.96); /* Native press feedback */
+        background: #f5f5f5;
+    }
+
+    /* Popup Overlay */
     .overlay {
         display: none;
         position: fixed;
         inset: 0;
-        background: rgba(0,0,0,0.08);
+        /* Slightly darker for better focus on small screens */
+        background: rgba(0, 0, 0, 0.4); 
+        /* Native frosted glass effect (iOS/Android) */
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        z-index: 1001;
+        -webkit-tap-highlight-color: transparent;
     }
 
-    /* popup window */
     .popup {
-        position: absolute;
+        position: fixed; 
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: clamp(17.5rem, 85vw, 31.25rem);
-        border: 1px solid #000;
+        width: clamp(17.5rem, 90vw, 31.25rem); 
+        max-height: 90vh; 
+        overflow-y: auto; 
+        
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
         background: #fff;
-        padding: 1.75px;
+        padding: 1.75rem; 
         line-height: 1.5;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        z-index: 1002;
     }
 
+    /* Close Button */
     .close {
         position: absolute;
-        top: 6px;
-        right: 10px;
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.75rem;
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
         cursor: pointer;
-        font-size: font-size: clamp(1rem, 1.25vw + 0.8rem, 1.375rem);
+        font-size: clamp(1.25rem, 1.25vw + 0.8rem, 1.5rem);
+        line-height: 1;
+        color: #333;
+        border-radius: 50%;
+        -webkit-tap-highlight-color: transparent;
+        transition: background 0.2s ease;
+    }
+
+    .close:active {
+        background: rgba(0, 0, 0, 0.05);
     }
 
     .line {
@@ -292,13 +338,23 @@ body {
     }
 
     .spacer {
-        height: 14px;
+        height: 1rem; 
     }
 
+    
     .link {
         display: inline-block;
-        margin-top: 1.1rem;
-        cursor: pointer;
-        text-decoration: underline;
+        padding: 0.75rem 1rem;
+        min-height: 44px; 
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        border-radius: 6px;
+        -webkit-tap-highlight-color: transparent;
+        transition: background 0.2s ease;
+    }
+
+    .link:active {
+        background: rgba(0, 0, 0, 0.05); 
     }
 
