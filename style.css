@@ -283,7 +283,7 @@ body {
         max-height: 90vh; 
         overflow-y: auto; 
         
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0);
         background: #fff;
         padding: 1.75rem; 
         line-height: 1.5;
@@ -293,8 +293,8 @@ body {
 
     .close {
         position: absolute;
-        top: 0.5rem;
-        right: 0.5rem;
+        top: 0.2rem;
+        right: 0.2rem;
         padding: 0.75rem;
         min-width: 44px;
         min-height: 44px;
@@ -306,9 +306,6 @@ body {
         font-size: clamp(1.25rem, 1.25vw + 0.8rem, 1.5rem);
         line-height: 1;
         color: #333;
-        border-radius: 50%;
-        -webkit-tap-highlight-color: transparent;
-        transition: background 0.2s ease;
     }
 
     .close:active {
@@ -326,17 +323,10 @@ body {
     
     .link {
         display: inline-block;
-        padding: 0.75rem 1rem;
-        min-height: 44px; 
-        text-decoration: none;
-        color: #000;
-        font-weight: 500;
-        border-radius: 6px;
-        -webkit-tap-highlight-color: transparent;
+        margin-top: 1.25rem;
+        cursor: pointer;
+        text-decoration: underline;
         transition: background 0.2s ease;
     }
 
-    .link:active {
-        background: rgba(0, 0, 0, 0.05); 
-    }
 
